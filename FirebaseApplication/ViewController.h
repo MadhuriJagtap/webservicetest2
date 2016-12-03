@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+@import Firebase;
+
 
 @interface ViewController : UIViewController
+
+- (IBAction)insertrecord:(id)sender;
+
+- (IBAction)readrecord:(id)sender;
+
+@property(nonatomic,retain)FIRDatabaseReference *ref;
 
 
 @end
